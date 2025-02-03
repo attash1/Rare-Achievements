@@ -7,7 +7,7 @@ This project fetches an API key from AWS Secrets Manager, so be sure you have a 
 Once you have an API key, create a new secret in Secrets Manager. From there, place the secret name and region in a .env folder. It should look like this
 
 `
-SECRET_NAME=<your secret name> <br />
+SECRET_NAME=<your secret name>     
 AWS_REGION=<region name>
 `
 
