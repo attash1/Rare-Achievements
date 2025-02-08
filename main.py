@@ -115,7 +115,7 @@ def get_global_achievement_stats(game_id: int):
     achievement_list = json.loads(global_achievement_request.text)['achievementpercentages']['achievements']
     achievement_dict = {}
     for achv in achievement_list:
-        achievement_dict[achv['name']] = achv['percent']
+        achievement_dict[achv['name']] = float(achv['percent'])
 
     return achievement_dict
 
